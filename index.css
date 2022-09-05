@@ -1,0 +1,64 @@
+/* Mobile First */
+body {
+  background-color: #ededed;
+}
+
+.cards,
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.buttons button {
+  width: fit-content;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.card h5 {
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.card--col {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 250px;
+}
+
+button:hover,
+.assoc--item:hover {
+  cursor: pointer;
+}
+
+/* Tablet */
+@media screen and (min-width: 767px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    margin: 10px;
+    width: 40%;
+  }
+
+  .card--col {
+    height: 500px;
+  }
+}

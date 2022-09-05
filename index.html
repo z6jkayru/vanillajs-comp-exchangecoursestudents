@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <h1>Asociar Usuarios a Empresas</h1>
+
+    <div class="cards">
+      <!-- Begin - Lista Alumnos -->
+      <div class="card">
+        <h5>Lista de Alumnos</h5>
+
+        <div id="association--users" class="card--col">
+          <span class="assoc--item" id="assoc--user--3">Alumno 3</span>
+          <span class="assoc--item" id="assoc--user--4">Alumno 4</span>
+          <span class="assoc--item" id="assoc--user--5">Alumno 5</span>
+          <span class="assoc--item" id="assoc--user--6">Alumno 6</span>
+          <span class="assoc--item" id="assoc--user--7">Alumno 7</span>
+        </div>
+      </div>
+      <!-- End - Lista Alumnos -->
+
+      <div class="buttons">
+        <button id="btnAdd">Agregar</button>
+        <button id="btnLess">Quitar</button>
+      </div>
+
+      <!-- Begin - Lista Alumnos en el Curso -->
+      <div class="card">
+        <h5>Alumnos en el Curso</h5>
+
+        <div id="association--courseusers" class="card--col">
+          <span class="assoc--item" id="deassoc--user--1">Alumno 1</span>
+          <span class="assoc--item" id="deassoc--user--2">Alumno 2</span>
+        </div>
+      </div>
+      <!-- End - Lista Alumnos en el Curos -->
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+      <button id="btnSaveAssociations">Guardar</button>
+    </div>
+
+    <footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="index.js"></script>
+    </footer>
+  </body>
+</html>
